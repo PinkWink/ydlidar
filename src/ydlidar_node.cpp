@@ -138,6 +138,31 @@ int main(int argc, char * argv[]) {
             
             scan_msg.ranges = scan.ranges;
             scan_msg.intensities =  scan.intensities;
+
+            for (int i = 40; i < 60; i++)
+            {
+                scan_msg.ranges[i] = 0.0;
+                scan_msg.intensities[i] = 0.0;        
+            }
+
+            for (int i = 160; i < 180; i++)
+            {
+                scan_msg.ranges[i] = 0.0;
+                scan_msg.intensities[i] = 0.0;        
+            }
+
+            for (int i = 540; i < 560; i++)
+            {
+                scan_msg.ranges[i] = 0.0;
+                scan_msg.intensities[i] = 0.0;        
+            }
+
+            for (int i = 660; i < 680; i++)
+            {
+                scan_msg.ranges[i] = 0.0;
+                scan_msg.intensities[i] = 0.0;        
+            }
+
             scan_pub.publish(scan_msg);
         }  
         rate.sleep();
