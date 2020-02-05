@@ -139,25 +139,25 @@ int main(int argc, char * argv[]) {
             scan_msg.ranges = scan.ranges;
             scan_msg.intensities =  scan.intensities;
 
-            for (int i = 40; i < 60; i++)
+            for (int i = 30; i < 70; i++)
             {
                 scan_msg.ranges[i] = 0.0;
                 scan_msg.intensities[i] = 0.0;        
             }
 
-            for (int i = 160; i < 180; i++)
+            for (int i = 150; i < 190; i++)
             {
                 scan_msg.ranges[i] = 0.0;
                 scan_msg.intensities[i] = 0.0;        
             }
 
-            for (int i = 540; i < 560; i++)
+            for (int i = 530; i < 570; i++)
             {
                 scan_msg.ranges[i] = 0.0;
                 scan_msg.intensities[i] = 0.0;        
             }
 
-            for (int i = 660; i < 680; i++)
+            for (int i = 650; i < 690; i++)
             {
                 scan_msg.ranges[i] = 0.0;
                 scan_msg.intensities[i] = 0.0;        
