@@ -1,4 +1,4 @@
-YDLIDAR ROS PACKAGE V1.3.9
+YDLIDAR ROS PACKAGE V1.3.9 - modified by bishop pearson for OMO R1 robot
 =====================================================================
 
 ROS node and test application for YDLIDAR
