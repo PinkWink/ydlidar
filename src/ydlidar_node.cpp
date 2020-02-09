@@ -131,13 +131,38 @@ int main(int argc, char * argv[]) {
             scan_msg.angle_min = scan.config.min_angle;
             scan_msg.angle_max = scan.config.max_angle;
             scan_msg.angle_increment = scan.config.ang_increment;
-            scan_msg.scan_time = scan.config.scan_time;
-            scan_msg.time_increment = scan.config.time_increment;
+            // scan_msg.scan_time = scan.config.scan_time;
+            // scan_msg.time_increment = scan.config.time_increment;
             scan_msg.range_min = scan.config.min_range;
             scan_msg.range_max = scan.config.max_range;
             
             scan_msg.ranges = scan.ranges;
             scan_msg.intensities =  scan.intensities;
+
+            for (int i = 150; i < 190; i++)
+            {
+                scan_msg.ranges[i] = 0.0;
+                scan_msg.intensities[i] = 0.0;        
+            }
+
+            for (int i = 295; i < 315; i++)
+            {
+                scan_msg.ranges[i] = 0.0;
+                scan_msg.intensities[i] = 0.0;        
+            }
+
+            for (int i = 405; i < 425; i++)
+            {
+                scan_msg.ranges[i] = 0.0;
+                scan_msg.intensities[i] = 0.0;        
+            }
+
+            for (int i = 530; i < 570; i++)
+            {
+                scan_msg.ranges[i] = 0.0;
+                scan_msg.intensities[i] = 0.0;        
+            }
+
             scan_pub.publish(scan_msg);
         }  
         rate.sleep();
